@@ -61,7 +61,8 @@ Check it out here 👉 [Live App](https://unique-croquembouche-23e1a9.netlify.ap
 
 - 🖊️ Create, Read, Update, Delete blog posts  
 - 📦 React + ShadCN UI for minimal yet functional design  
-- 🌍 Flask API connected with MongoDB Atlas  
+- 🌍 Flask API connected with MongoDB Atlas
+- 🖼️ Image upload support
 - 🔧 Basic structure to build upon — ready for more cool features!
 
 ---
@@ -69,11 +70,14 @@ Check it out here 👉 [Live App](https://unique-croquembouche-23e1a9.netlify.ap
 ## 👀 Future Improvements
 
 - ✅ Responsive design across all devices 📱💻  
-- 🔐 User authentication  
 - 💬 Comment system  
 - ❤️ Like/bookmark functionality  
-- ✍️ Rich text editor  
-- 🖼️ Image upload support  
+- ✍️ Rich text editor
+- 🖼️ Chat Feature
+- 🌍 Follow Different Account Feature
+- 🌍 Private and Public Account Feaure
+- and Many More
+  
 
 ---
 

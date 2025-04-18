@@ -59,3 +59,26 @@ def delete_post(post_id):
     if result.deleted_count:
         return jsonify({"message": "Post deleted"}), 200
     return jsonify({"error": "Post not found"}), 404
+
+
+def update_post_description(post_id):
+    db = current_app.mongo
+    data = request.get_json()
+
+    new_description = data.get("description")
+
+    if not new_description:
+        return jsonify({"error": "Description is required"}), 400
+
+    try:
+        result = db.posts.update_one(
+            {"_id": ObjectId(post_id)},
+            {"$set": {"description": new_description}}
+        )
+    except:
+        return jsonify({"error": "Invalid post ID format"}), 400
+
+    if result.matched_count == 0:
+        return jsonify({"error": "Post not found"}), 404
+
+    return jsonify({"message": "Description updated"}), 200

@@ -25,16 +25,16 @@ const items = [
     url: "/dashboard/add",
     icon: Inbox,
   },
-  {
-    title: "chats",
-    url: "/dashboard/chat",
-    icon: Menu,
-  },
-  {
-    title: "Profile",
-    url: "/dashboard/profile",
-    icon: Settings,
-  },
+  // {
+  //   title: "chats",
+  //   url: "/dashboard/chat",
+  //   icon: Menu,
+  // },
+  // {
+  //   title: "Profile",
+  //   url: "/dashboard/profile",
+  //   icon: Settings,
+  // },
 ]
 
 export function AppSidebar() {
